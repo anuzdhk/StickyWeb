@@ -12,6 +12,20 @@ StickyWeb is a lightweight Chrome extension that lets you place notes directly o
 
 The extension is built with Manifest V3 and vanilla JavaScript, HTML, and CSS. It has no framework, external runtime dependency, account requirement, analytics, or build step.
 
+## Installation
+
+StickyWeb is currently distributed as an unpacked Chrome extension.
+
+1. Download : [StickyWeb v1.2.0.zip](https://github.com/user-attachments/files/31191293/StickyWeb.v1.2.0.zip)
+
+2. Open `chrome://extensions` in Google Chrome.
+3. Enable **Developer mode** in the upper-right corner.
+4. Select **Load unpacked**.
+5. Choose the folder containing `manifest.json`.
+6. Pin StickyWeb from Chrome's Extensions menu for quick access.
+
+After updating the source files, return to `chrome://extensions` and select **Reload** on the StickyWeb card. Refresh already-open webpages so Chrome can inject the updated content script.
+
 ## Features
 
 - Create notes from the extension popup or keyboard shortcut.
@@ -29,19 +43,7 @@ The extension is built with Manifest V3 and vanilla JavaScript, HTML, and CSS. I
 - View and edit the active Chrome shortcut.
 - Use light and dark interface themes based on system preferences.
 
-## Installation
 
-StickyWeb is currently distributed as an unpacked Chrome extension.
-
-1. Download : [StickyWeb v1.2.0.zip](https://github.com/user-attachments/files/31191293/StickyWeb.v1.2.0.zip)
-
-2. Open `chrome://extensions` in Google Chrome.
-3. Enable **Developer mode** in the upper-right corner.
-4. Select **Load unpacked**.
-5. Choose the folder containing `manifest.json`.
-6. Pin StickyWeb from Chrome's Extensions menu for quick access.
-
-After updating the source files, return to `chrome://extensions` and select **Reload** on the StickyWeb card. Refresh already-open webpages so Chrome can inject the updated content script.
 
 ### Local files
 
