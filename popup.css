@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light dark;
+  font: 100%/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --brand: #b500ee;
+  --brand-hover: #9c00ce;
+  --text: #19171b;
+  --secondary: #6f6a73;
+  --background: #f6f5f7;
+  --surface: #fff;
+  --subtle: #f2f0f3;
+  --border: #e4e1e6;
+  --focus: rgba(181, 0, 238, .22);
+}
+
+* { box-sizing: border-box; }
+html, body { width: 360px; min-height: 408px; margin: 0; }
+body { overflow: hidden; color: var(--text); background: var(--background); -webkit-font-smoothing: antialiased; }
+button { font: inherit; }
+.window { padding: 16px; }
+
+.toolbar { display: flex; align-items: center; gap: 10px; padding: 2px 2px 14px; }
+.brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+.brand-mark img { width: 26px; height: 26px; }
+.brand-copy { min-width: 0; }
+.brand-copy h1 { margin: 0; font-size: 15px; line-height: 1.2; letter-spacing: -.015em; font-weight: 700; }
+.brand-copy p { max-width: 260px; margin: 2px 0 0; overflow: hidden; color: var(--secondary); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+
+.action-card { padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: 0 4px 16px rgba(33, 25, 36, .06); }
+.eyebrow { margin: 0 0 3px; color: var(--secondary); font-size: 11px; font-weight: 600; }
+.action-card h2 { margin: 0; font-size: 21px; line-height: 1.2; letter-spacing: -.025em; font-weight: 700; }
+.page-summary { margin: 5px 0 16px; color: var(--secondary); font-size: 12px; }
+
+.primary-button, .secondary-button { width: 100%; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 650; transition: background 120ms ease, border-color 120ms ease, transform 80ms ease; }
+.primary-button { gap: 7px; border: 1px solid var(--brand); background: var(--brand); color: #fff; }
+.primary-button:hover { border-color: var(--brand-hover); background: var(--brand-hover); }
+.primary-button svg { width: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.secondary-button { gap: 7px; margin-top: 8px; padding: 0 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+.secondary-button:hover { background: var(--subtle); }
+.secondary-button svg { width: 15px; margin-left: auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.secondary-button > span:first-child { margin-left: auto; }
+.count-pill { min-width: 22px; padding: 1px 6px; border-radius: 999px; background: var(--subtle); color: var(--secondary); font-size: 10px; }
+.primary-button:active, .secondary-button:active, .edit-button:active { transform: scale(.98); }
+.primary-button:focus-visible, .secondary-button:focus-visible, .edit-button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.primary-button:disabled { border-color: var(--border); background: #c9c5cb; cursor: not-allowed; }
+
+.shortcut-tip { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; margin-top: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.shortcut-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: var(--subtle); color: var(--brand); }
+.shortcut-icon svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.shortcut-copy h3 { margin: 0; font-size: 12px; line-height: 1.2; }
+.shortcut-copy p { margin: 3px 0 0; color: var(--secondary); font-size: 10px; }
+kbd { color: var(--text); font: 650 10px/1.2 inherit; white-space: nowrap; }
+.edit-button { border: 0; border-radius: 7px; background: transparent; color: var(--brand); cursor: pointer; padding: 6px; font-size: 11px; font-weight: 650; }
+.edit-button:hover { background: var(--subtle); }
+.inline-status { min-height: 14px; margin: 7px 2px 0; color: #b42318; font-size: 10px; text-align: center; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --text: #f5f2f6; --secondary: #aaa4ad; --background: #19171a; --surface: #242126; --subtle: #302c32; --border: #3c3740; --brand: #cf4dff; --brand-hover: #d96cff; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+@media (prefers-contrast: more) { .action-card, .shortcut-tip, .secondary-button { border-color: currentColor; } }

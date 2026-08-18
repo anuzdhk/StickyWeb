@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StickyWeb</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="window">
+      <header class="toolbar">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="icons/logo.svg" alt="">
+        </div>
+        <div class="brand-copy">
+          <h1>StickyWeb</h1>
+          <p id="page-label">Current webpage</p>
+        </div>
+      </header>
+
+      <section class="action-card" aria-labelledby="capture-title">
+        <p class="eyebrow">Current page</p>
+        <h2 id="capture-title">Page notes</h2>
+        <p class="page-summary" id="page-summary">Checking saved notes…</p>
+
+        <button class="primary-button" id="add-note" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <span>Add Note</span>
+        </button>
+
+        <button class="secondary-button" id="view-all" type="button">
+          <span>View All Notes</span>
+          <span class="count-pill" id="total-count">0</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+        </button>
+      </section>
+
+      <section class="shortcut-tip" aria-labelledby="shortcut-title">
+        <div class="shortcut-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+        </div>
+        <div class="shortcut-copy">
+          <h3 id="shortcut-title">Quick shortcut</h3>
+          <p>Press <kbd id="shortcut">Alt + Shift + S</kbd> on any page.</p>
+        </div>
+        <button class="edit-button" id="edit-shortcut" type="button">Edit</button>
+      </section>
+
+      <p class="inline-status" id="status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
