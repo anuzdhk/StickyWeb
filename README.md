@@ -248,6 +248,4 @@ When proposing a change:
 - Interface icons are based on [Heroicons](https://heroicons.com/).
 - StickyWeb is built with standard Chrome Extension APIs.
 
-## License
 
-No open-source license is included by default. Add a `LICENSE` file before distributing the project under a specific license.
