@@ -42,6 +42,7 @@ After updating the source files, return to `chrome://extensions` and select **Re
 - Export all notes as formatted JSON.
 - View and edit the active Chrome shortcut.
 - Use light and dark interface themes based on system preferences.
+<img width="693" height="561" alt="Screenshot 2026-08-18 233932" src="https://github.com/user-attachments/assets/797db82b-9945-4f95-a079-30a3c3d94b5c" />
 
 
 
